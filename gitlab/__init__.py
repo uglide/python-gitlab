@@ -34,7 +34,7 @@ from gitlab.exceptions import *  # noqa
 from gitlab.objects import *  # noqa
 
 __title__ = 'python-gitlab'
-__version__ = '0.20'
+__version__ = '0.20.1'
 __author__ = 'Gauvain Pocentek'
 __email__ = 'gauvain@pocentek.net'
 __license__ = 'LGPL3'
@@ -71,7 +71,7 @@ class Gitlab(object):
                  ssl_verify=True, http_username=None, http_password=None,
                  timeout=None):
 
-        self._url = '%s/api/v3' % url
+        self._url = '%s/api/v4' % url
         #: Timeout to use for requests to gitlab server
         self.timeout = timeout
         #: Headers that will be used in request to GitLab
